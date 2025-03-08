@@ -314,3 +314,36 @@ html::before {
   backdrop-filter: blur(5px) !important; /* Optional: adds a subtle blur */
   border-radius: 8px !important; /* Makes it look smoother */
 }
+
+
+
+
+
+/* Speaking Indicator (WeeWoo) */
+/* Default state: No border */
+.border__2f4f7 {
+  border: none !important;
+}
+
+/* Ensure avatar wrapper is the reference */
+.wrapper__44b0c.avatarWrapper_fb62e2 {
+  position: relative !important;
+}
+
+/* Speaking border */
+.border__2f4f7.speaking__2f4f7 {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+
+  width: 94% !important; /* Adjust to fit around the avatar */
+  height: 90% !important;
+  border: 0px rgb(0, 255, 0) !important;
+  border-radius: 30px !important; /* Circular */
+  box-shadow: 
+  0 0 40px 1px rgb(0, 255, 0) , /* Outer glow */
+  inset 0 0 40px 1px rgb(0, 255, 0); /* Inner glow */
+
+  pointer-events: none !important; /* Prevent interaction */
+}
