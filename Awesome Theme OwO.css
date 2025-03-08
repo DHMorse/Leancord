@@ -1,0 +1,316 @@
+/**
+ * @name Awesome Theme OwO
+ * @author dantheman75
+ * @version 1.0.7 awkglass
+ * @source https://github.com/ungiglio/DiscordDiscordia/
+ * @website https://ungiglio.github.io/DiscordDiscordia/
+ * @description Silly theme I edited for personal use :3c
+ * @authorId 769144538107215872
+ * @invite DDaRdZwB4h
+*/
+
+@import url('https://ungiglio.github.io/DiscordDiscordia/AWKGLASS/v2.awkglass.css');
+/* @import url("https://ungiglio.github.io/DiscordDiscordia/awkglass_code/horizontal_server_list/top.css"); comment/remove this line to restore the servers bar to its original position */
+@import url("https://ungiglio.github.io/DiscordDiscordia/awkglass_code/colored_mentions/mentions.css"); /* credits to davart154 for the original code */
+
+/* CUSTOMIZATION CONTROL CENTER */
+:root {
+  /* --rgb-highlight: 178, 102, 255;                          /* 4, 217, 255; /* The main highlight color */
+  /* --rgb-close-button: 224, 58, 62;                         The main "close this" or "deny" color */
+  /* --rgb-online-color: 31, 92, 171;                         /* (31, 147, 80: default green) The color used in the "online" user status symbol */
+  /* --rgb-afk-color: 220, 163, 46;                           The color used in the "idle" user status symbol */
+  /* --rgb-dnd-color: 224, 58, 62;                            The color used in the "do not disturb" user status symbol */
+  /* --rgb-streaming-color: 188, 19, 254;                     The color used in the "streaming X" user status symbol */
+  /* --status-danger-rgb: rgb(152, 51, 255);                      The color used for every danger action/button */
+
+  --transition-time: .3;                                  /* How fast animations added by the theme happen. Default is 0.3 seconds */
+
+  --show-original-title: 0;                                /* Whether you want to show discords original title (0 means no, 1 means yes) */
+  --show-custom-title: 1;                                  /* Whether you want to show a custom title (0 means no, 1 means yes) */
+  --custom-title-text: "Silly X3";            /* The custom text you want to display */
+  --custom-title-font-size: 18px;                          /* The size in pixels of the custom title text */
+  --custom-title-font-weight: normal;                      /* The font "weight" of the custom title text. For reference: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+  --custom-title-margin-top: 0px;                          /* The distance from the top of the window to the custom title text */
+  --custom-title-margin-left: 10px;                        /* The distance from the left side of the window to the custom title text */
+
+  --custom-channel-header-color: rgb(241, 236, 247);
+  --custom-channel-icon: rgb(185, 123, 154);              /* channel list unselected color */
+  --custom-selected-channel-color: rgba(255, 106, 240, 0.808);     /* channel list selected color */
+  --cat-custom-color-rgba: 190, 120, 190;
+  --cat-custom-color: rgb(var(--cat-custom-color-rgba));
+
+  --darkPurple-background: rgb(46, 0, 58);                /* Textarea background color */
+
+  --HSL-server-icon-size: 30px;                           /* Size of the server icons | DEFAULT: 40px */
+  --HSL-server-spacing: 10px;                             /* Spacing between each server icon | DEFAULT: 10px */
+  --HSL-server-direction: column;                         /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+
+  /* --custom-image-url: url('https://i.imgur.com/GcFkyZp.jpeg'); */
+
+  /* FONTS */
+    --font-primary: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-headline: 'ABC Ginto Nord', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-code: 'gg mono', 'Source Code Pro', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+    --font-clan-body: Fraunces, 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-clan-signature: Corinthia, 'gg sans', cursive, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-display-marketing: 'ABC Ginto Nord', 'gg sans', serif, 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+:root {
+  --background-primary: rgba(0, 0, 0, 0.15) !important;
+  --background-secondary: rgba(0, 0, 0, 0.125) !important;
+  --background-tertiary: rgba(0, 0, 0, 0.1) !important;
+  --background-floating: rgba(0, 0, 0, 0.175) !important;
+  --background-modifier-accent: rgba(255, 255, 255, 0.05) !important;
+  --background-modifier-hover: rgba(255, 255, 255, 0.075) !important;
+  --background-modifier-active: rgba(255, 255, 255, 0.1) !important;
+  --darkPurple-background: rgba(46, 0, 58, 0.15) !important;
+}
+
+.appMount_fae9dd, .app_de4237, .container__26baa {
+  background: rgba(0, 0, 0, 0.15) !important; /* Lighter transparency */
+}
+
+
+
+
+
+
+
+
+/* Reworked Bubbles */
+.cozyMessage__5126c {
+  background: rgba(20, 20, 20, 0.85) !important; /* Darker semi-transparent background */
+  border-radius: 18px !important; /* Softer rounded edges */
+  padding: 10px 14px !important; /* More padding for clean look */
+  margin: 6px 0 !important; /* Spacing between bubbles */
+  border: 2px solid rgba(255, 105, 180, 0.6) !important; /* Pink border :D */
+  box-shadow: 0px 0px 8px rgba(255, 105, 180, 0.4) !important; /* Soft glow effect (wowzers) */
+  transition: all 0.2s ease-in-out !important; /* Smooth hover effect (add color at some point) */
+}
+
+
+/* Moves ONLY The Text Block Thingy */
+.contents_c19a55 {
+  margin-left: 60px !important; /* Moves text to the right */
+  position: relative !important;
+}
+
+/* Username Relativity keeper */
+.header_c19a55 {
+  position: relative !important;
+  margin-bottom: 3px !important;
+}
+
+/* Keep Message Content Good */
+.messageContent_c19a55 {
+  position: relative !important;
+  word-wrap: break-word !important;
+}
+
+/* Sexy pink bordered message bubble */
+.cozyMessage__5126c {
+  background: rgba(20, 20, 20, 0.85) !important;
+  border-radius: 18px !important;
+  padding: 10px 14px !important;
+  border: 2px solid rgba(255, 105, 180, 0.6) !important;
+  box-shadow: 0px 0px 8px rgba(255, 105, 180, 0.4) !important;
+  transition: all 0.2s ease-in-out !important;
+  max-width: 75% !important;
+  word-wrap: break-word !important;
+  display: inline-block !important;
+}
+
+/* Hover Effect */
+.cozyMessage__5126c:hover {
+  background: rgba(30, 30, 30, 0.9) !important;
+  border-color: rgba(255, 182, 193, 0.8) !important;
+  box-shadow: 0px 0px 12px rgba(255, 182, 193, 0.6) !important;
+}
+
+/* Un-Stupids Pfp Issues */
+.avatar_c19a55 {
+  position: absolute !important;
+  left: -62px !important;  /* Adjust to fine-tune */
+  top: 0px !important;   /* Adjust to fine-tune */
+  width: 40px !important; 
+  height: 40px !important;
+  border-radius: 50% !important;
+  z-index: 10 !important; /* Ensures it doesn't get covered */
+}
+
+.container_b7e1cb {  
+  margin-top: 20px !important; /* Pushes attachments downward */
+  margin-left: 30px
+}
+
+
+.avatarDecoration_c19a55 {
+  position: absolute !important;
+  top: 50% !important;
+  left: -19.5% !important;
+  transform: translate(-50%, -50%) scale(1) !important; /* Shrinks the decoration */
+  width: 20% !important;
+  height: 98% !important;
+  pointer-events: none !important; /* Prevents interaction issues */
+  z-index: 11
+}
+
+
+
+/* Aligns reaction box thing with the text */
+.reactions__23977 {
+  position: relative !important;
+  margin-left: 55px !important; /* Adjust to match text alignment */
+  display: flex !important;
+  align-items: center !important;
+}
+
+
+.message__5126c.cozyMessage__5126c.wrapper_c19a55:not(.groupStart__5126c) {
+  margin-left: 66px !important; /* Align the bubble with the first message */
+  max-width: calc(100% - 60px) !important; /* Prevent stretching */
+  padding-left: 0px !important; /* Keep padding from shifting text */
+  display: inline-block !important; /* Ensures bubble wraps properly */
+  width: auto !important; /* Allows natural width */
+}
+
+/* Message conntent fix */
+.message__5126c.cozyMessage__5126c.wrapper_c19a55:not(.groupStart__5126c) .messageContent_c19a55 {
+  margin-left: -120px !important; /* Align text properly */
+  display: inline !important; /* Maintain proper wrapping */
+  white-space: normal !important; /* Prevent weird spacing */
+}
+
+
+/* Pretty Message Bubble Border :O */
+.link__972a0.selected .layout__20a53 {
+  border-left: 4px solid #ff66b2 !important; /* Pink left border */
+  background-color: rgba(255, 102, 178, 0.1) !important; /* Light pink background */
+  border-radius: 6px !important; /* Smooth edges */
+  padding-left: 4px !important; /* Prevents overlap */
+}
+
+
+/* Pretty Window Border :3 */
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0; /* Ensures full coverage on all sides */
+  border: 4px solid #f705ce9d;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ff66b2;
+  pointer-events: none; /* Prevents interference with UI */
+   /* Ensures it stays above everything */
+}
+
+
+.pill_e5445c .item__58105 {
+  background-color: #32cd32 !important;
+  box-shadow: 0 0 8px #32cd32 !important;
+}
+
+
+.emptyText__1464f::after {
+  content: "Send something cute... ✨"; /* Your new text */
+  color: #ff66b2 !important; /* Pink color */
+  font-style: italic !important; /* Optional styling */
+  opacity: 0.8 !important; /* Slight transparency */
+}
+
+
+/* Reserved For My Bbg <3 */
+.link__972a0[aria-label*="404"] .layout__20a53 {
+  border-left: 4px solid #7827e2 !important; /* Pink border on the left */
+  background-color: rgba(111, 12, 168, 0.4) !important; /* Light pink highlight */
+  border-radius: 12px !important; /* Smooth the edges */
+  padding-left: 4px !important; /* Prevents overlap */
+}
+
+/* Add a pretty pink border to the call tiles */
+.tile__2f4f7 {
+    border: 1px solid #ff66b2 !important; /* Cute pink border */
+    border-radius: 40px !important; /* Smooth rounded edges */
+    box-shadow: 0 0 10px #ff66b2 !important; /* Soft glow effect */
+    padding: 4px !important; /* Prevents content from touching the border */
+}
+
+/* Add a pink border around the entire call grid */
+.videoGrid_a21736 {
+  border: 1px solid #ff66b2 !important; /* Pretty pink border */
+  border-radius: 20px !important; /* Smooth rounded edges */
+  box-shadow: 0 0 15px #ff66b2 !important; /* Soft glow effect */
+  padding: 8px !important; /* Adds spacing inside the border */
+}
+
+/* Specifically remove the "Play Again" section */
+.privateChannelsHeaderContainer__99e7c:has(.plusIcon__675e5) {
+  display: none !important;
+}
+
+/* Remove the activity suggestion tiles (Sudoku, Watch Together, etc.) */
+.itemContainer__675e5 {
+  display: none !important;
+}
+
+/* Style for the Direct Messages header */
+.privateChannelsHeaderContainer__99e7c {
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #e0137a, #6c09c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 5px;
+}
+
+.headerText__99e7c {
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #e96cb3, #8b45ec); /* Gradient text */
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px 4px rgba(189, 147, 249, 0.4); /* Soft glow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between text and lines */
+}
+
+.headerText__99e7c::before,
+.headerText__99e7c::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background: linear-gradient(90deg, #f361b4d2, #9b54ffd2);
+  opacity: 0.8;
+}
+
+.overlayTitleText__2f4f7 {
+  color: rgb(241, 96, 210) !important;
+}
+
+.gradientTop_bfe55a, 
+.gradientBottom_bfe55a {
+    background: linear-gradient(to bottom, rgba(255, 102, 178, 0.09), rgba(0, 0, 0, 0)) !important;
+}
+
+/* Highlight Stuff */
+:root {
+--rgb-highlight: 178, 10, 255;                          /* 4, 217, 255; /* The main highlight color */
+--rgb-close-button: 224, 258, 62;                         /* The main "close this" or "deny" color */
+--rgb-online-color: 31, 147, 80;                         /* (31, 147, 80: default green) /* The color used in the "online" user status symbol */
+--rgb-afk-color: 255, 0, 255;                           /* The color used in the "idle" user status symbol */
+--rgb-dnd-color: 225, 18, 12;                            /* The color used in the "do not disturb" user status symbol */
+--rgb-streaming-color: 188, 19, 254;                     /* The color used in the "streaming X" user status symbol */
+--status-danger: rgb(152, 51, 255);                      /* The color used for every danger action/button */
+}
+
+.scroller_c1e9c4 {
+  background: rgba(142, 63, 145, 0.5) !important; /* Adjust transparency as needed */
+  backdrop-filter: blur(5px) !important; /* Optional: adds a subtle blur */
+  border-radius: 8px !important; /* Makes it look smoother */
+}
