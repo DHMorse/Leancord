@@ -210,15 +210,6 @@ html::before {
   box-shadow: 0 0 8px #32cd32 !important;
 }
 
-
-.emptyText__1464f::after {
-  content: "Send something cute... ✨"; /* Your new text */
-  color: #ff66b2 !important; /* Pink color */
-  font-style: italic !important; /* Optional styling */
-  opacity: 0.8 !important; /* Slight transparency */
-}
-
-
 /* Reserved For My Bbg <3 */
 .link__972a0[aria-label*="404"] .layout__20a53 {
   border-left: 4px solid #7827e2 !important; /* Pink border on the left */
