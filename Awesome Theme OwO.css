@@ -347,3 +347,66 @@ html::before {
 
   pointer-events: none !important; /* Prevent interaction */
 }
+
+/* Style all delete/remove/disable related elements */
+/* Filled style buttons (like Disable Account) */
+.button__201d5.lookFilled__201d5.colorRed__201d5 {
+  background-color: rgba(255, 102, 178, 0.8) !important;
+  border: 2px solid rgba(255, 105, 180, 0.6) !important;
+  box-shadow: 0px 0px 8px rgba(255, 105, 180, 0.4) !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.button__201d5.lookFilled__201d5.colorRed__201d5:hover {
+  background-color: rgba(255, 182, 193, 0.9) !important;
+  border-color: rgba(255, 182, 193, 0.8) !important;
+  box-shadow: 0px 0px 12px rgba(255, 182, 193, 0.6) !important;
+}
+
+/* Outlined style buttons (like Delete Account) */
+.button__201d5.lookOutlined__201d5.colorRed__201d5 {
+  background-color: transparent !important;
+  border: 2px solid rgba(255, 102, 178, 0.8) !important;
+  box-shadow: 0px 0px 8px rgba(255, 105, 180, 0.4) !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.button__201d5.lookOutlined__201d5.colorRed__201d5:hover {
+  background-color: rgba(255, 102, 178, 0.2) !important;
+  border-color: rgba(255, 182, 193, 0.8) !important;
+  box-shadow: 0px 0px 12px rgba(255, 182, 193, 0.6) !important;
+}
+
+/* Text color for all delete-related buttons */
+.button__201d5.colorRed__201d5 .contents__201d5 {
+  font-weight: 500 !important;
+}
+
+.button__201d5.lookFilled__201d5.colorRed__201d5 .contents__201d5 {
+  color: white !important;
+}
+
+.button__201d5.lookOutlined__201d5.colorRed__201d5 .contents__201d5 {
+  color: rgba(255, 102, 178, 0.9) !important;
+}
+
+.button__201d5.lookOutlined__201d5.colorRed__201d5:hover .contents__201d5 {
+  color: rgba(255, 182, 193, 0.9) !important;
+}
+
+/* Style delete/remove icons and text */
+.colorRed__201d5 svg path {
+  fill: rgba(255, 102, 178, 0.9) !important;
+}
+
+.colorRed__201d5:hover svg path {
+  fill: rgba(255, 182, 193, 0.9) !important;
+}
+
+.colorRed__201d5 {
+  color: rgba(255, 102, 178, 0.9) !important;
+}
+
+.colorRed__201d5:hover {
+  color: rgba(255, 182, 193, 0.9) !important;
+}
