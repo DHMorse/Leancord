@@ -410,3 +410,29 @@ html::before {
 .colorRed__201d5:hover {
   color: rgba(255, 182, 193, 0.9) !important;
 }
+
+/* Autocomplete Dropdown - Darker Background */
+.autocomplete__13533.outerWrapper_d1405b,
+.autocompleteInner__13533.wrapper_d1405b,
+.scroller_affa7e.list_d1405b {
+  background: rgba(20, 20, 20, 0.95) !important; /* Much darker, almost opaque background */
+  backdrop-filter: blur(8px) !important; /* Stronger blur effect */
+  border-radius: 10px !important; /* Smooth rounded corners */
+  border: 1px solid rgba(255, 105, 180, 0.4) !important; /* Subtle pink border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important; /* Shadow for depth */
+}
+
+/* Make the autocomplete items more visible on hover */
+.clickable__13533.itemWrapper_d1405b:hover {
+  background-color: rgba(255, 105, 180, 0.2) !important; /* Pink highlight on hover */
+}
+
+/* Style the category headers for better contrast */
+.categoryHeader_d1405b {
+  background-color: rgba(40, 40, 40, 0.9) !important;
+  border-radius: 6px !important;
+}
+
+.button__201d5.lookFilled__201d5.colorRed__201d5 .contents__201d5 {
+  color: white !important;
+}
