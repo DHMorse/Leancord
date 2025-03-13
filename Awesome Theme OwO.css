@@ -436,3 +436,25 @@ html::before {
 .button__201d5.lookFilled__201d5.colorRed__201d5 .contents__201d5 {
   color: white !important;
 }
+
+/* Hide Nitro element in the channel list */
+.link__972a0[data-list-item-id="private-channels-uid_593___nitro"],
+.channel__972a0[aria-posinset="2"] a[href="/store"] {
+  display: none !important;
+}
+
+/* Also hide its parent container to prevent empty space */
+.channel__972a0[aria-posinset="2"] {
+  display: none !important;
+}
+
+/* Hide Shop element in the channel list */
+.link__972a0[data-list-item-id="private-channels-uid_58___shop"],
+.channel__972a0 a[href="/shop"] {
+  display: none !important;
+}
+
+/* Also hide its parent container to prevent empty space */
+.channel__972a0:has(a[href="/shop"]) {
+  display: none !important;
+}
